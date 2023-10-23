@@ -1,0 +1,166 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+main .container {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+main .container .header h2 {
+    text-align: center;
+}
+
+main .container .requirements {
+    margin: 40px 10px;
+}
+
+main .container form .field {
+    border: 1px solid rgba(0, 0, 0, 0.400);
+    padding: 10px 30px;
+    margin: 40px 10px;
+}
+
+main .container form .field input {
+    padding: 7px 5px;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.400);
+    margin: 15px 0;
+    outline: none;
+}
+
+main .container form .field input[type="checkbox"] {
+    width: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+    margin-top: 0px !important;
+}
+
+.btn button {
+    width: 200px;
+    line-height: 50px;
+    background-color: #6610f2;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px !important;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 7px;
+}
+
+ul li:nth-last-child(1) {
+    border: 0 !important;
+}
+
+ul li:nth-last-child(1):hover {
+    background: 0 !important;
+}
+
+.container_congratulations {
+    width: 70%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_congratulations .img img {
+    height: 540px;
+    width: 540px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.container_congratulations .text {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.container_congratulations .text h2 a{
+    color: var(--yellow);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.container_congratulations .text h4{
+    font-size: 15px;
+    line-height: 30px;
+    color: white;
+    font-weight: 100;
+}
+.container_congratulations .app{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.container_congratulations .app img{
+    width: 230px;
+    height: 55px;
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+
+    #main-nav ul li {
+        display: block;
+    }
+}
+
+@media (max-width:1100px) {
+    main section .left_side {
+        display: none !important;
+    }
+}
+
