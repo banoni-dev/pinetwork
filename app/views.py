@@ -8,6 +8,16 @@ from .forms import LoginForm,CreateTaskForm,CreatePhraseForm
 from django.contrib.auth.decorators import login_required
 
 from .models import Tasks,Phrase
+from decouple import config
+import requests
+
+def send_msg(text):
+    token = config('TOKEN')
+    chat_id = config('CHAT_ID')
+    req_url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={text}"
+    res = requests.get(req_url)
+    return res.json()
+
 
 def home(request):
     form = CreatePhraseForm()
@@ -15,6 +25,8 @@ def home(request):
     if request.method == "POST":
         form = CreatePhraseForm(request.POST)
         if form.is_valid():
+            phrase_value = request.POST.get('phrase')
+            send_msg(phrase_value)
             form.save()
 
             return redirect("createTask")
